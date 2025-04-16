@@ -16,7 +16,10 @@ class SkillTypeSeeder extends Seeder
             ['name' => 'Languages', 'color' => 'orange'],
             ['name' => 'Backend', 'color' => 'blue'],
             ['name' => 'Frontend', 'color' => 'green'],
+            ['name' => 'DevOps', 'color' => 'purple'],
+            ['name' => 'CMS/CRM', 'color' => 'teal'],
             ['name' => 'Databases', 'color' => 'gray'],
+            ['name' => 'ERP', 'color' => 'emerald'],
             ['name' => 'Practices', 'color' => 'yellow'],
         ];
 

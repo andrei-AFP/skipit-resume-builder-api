@@ -58,7 +58,7 @@ class ExperienceSeeder extends Seeder
                 'skills' => Skill::with('skillType')->whereIn('name', [
                     'PHP', 'Laravel', 'CakePHP', 'Node.js', 'Elixir',
                     'HTML', 'SCSS', 'Less', 'Gulp', 'JavaScript', 'jQuery',
-                    'Wordpress', 'Prestashop', 'Magento',
+                    'Socket.io', 'Wordpress', 'Prestashop', 'Magento',
                     'Python', 'GRPC', 'MySQL', 'Docker', 'AWS Cloud',
                 ])->get(),
             ],
@@ -73,7 +73,7 @@ class ExperienceSeeder extends Seeder
                 'description' => null,
                 'skills' => Skill::with('skillType')->whereIn('name', [
                     'PHP', 'Codeigniter', 'Slim', 'Yii2', 'Laravel', 'Symfony',
-                    'HTML', 'SCSS', 'JavaScript', 'jQuery',
+                    'HTML', 'SCSS', 'JavaScript', 'jQuery', 'Socket.io',
                     'Jenkins', 'MySQL', 'Git', 'Bitbucket', 'Jira', 'Docker', 'RestAPI'
                 ])->get(),
             ],

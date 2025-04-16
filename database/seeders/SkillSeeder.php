@@ -26,21 +26,43 @@ class SkillSeeder extends Seeder
                 [ 'name' => 'Yii2', 'icon' => 'Yii' ],
                 [ 'name' => 'Node.js', 'icon' => 'Nodedotjs' ],
                 [ 'name' => 'Phoenix Framework', 'icon' => 'Phoenixframework' ],
+                [ 'name' => 'Codeigniter' ],
+                [ 'name' => 'CakePHP' ],
+                [ 'name' => 'GraphQL' ],
             ],
             'Frontend' => [
                 [ 'name' => 'React' ],
+                [ 'name' => 'MobX' ],
                 [ 'name' => 'Next.js', 'icon' => 'Nextdotjs' ],
                 [ 'name' => 'TypeScript' ],
+                [ 'name' => 'Socket.io', 'icon' => 'Socketdotio' ],
+                [ 'name' => 'Sass', 'icon' => 'Sass' ],
+                [ 'name' => 'Tailwind CSS', 'icon' => 'Tailwindcss' ],
+                [ 'name' => 'jQuery' ],
+            ],
+            'DevOps ' => [
+                [ 'name' => 'GitHub' ],
+                [ 'name' => 'Docker' ],
+                [ 'name' => 'AWS Cloud', 'icon' => 'Amazon' ],
+                [ 'name' => 'Kubernetes', 'icon' => 'Kubernetes' ],
+            ],
+            'CMS/CRM' => [
+                [ 'name' => 'Drupal' ],
+                [ 'name' => 'Wordpress' ],
+                [ 'name' => 'Magento', 'icon' => 'Mega' ],
+                [ 'name' => 'Prestashop' ],
             ],
             'Databases' => [
                 [ 'name' => 'MySQL' ],
                 [ 'name' => 'MongoDB' ],
                 [ 'name' => 'Elasticsearch' ],
             ],
+            'ERP' => [
+                [ 'name' => 'SAP' ],
+            ],
             'Practices' => [
                 [ 'name' => 'Microservices', 'icon' => 'Hackthebox' ],
                 [ 'name' => 'Agile', 'icon' => 'Jira' ],
-                [ 'name' => 'Git' ],
             ],
         ];
 
