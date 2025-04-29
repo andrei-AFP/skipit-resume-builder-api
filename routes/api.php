@@ -11,3 +11,4 @@ Route::apiResource('skill-types', SkillTypeController::class);
 
 Route::get('/users/{userId}', [UserController::class, 'show']);
 Route::get('/users/{userId}/skills', [UserController::class, 'getSkills']);
+Route::get('/user/{username}', [UserController::class, 'showByUsername']);

@@ -8,11 +8,23 @@ use App\Models\User;
 class UserController extends Controller
 {
     /**
-     * Display the specified resource.
+     * Display the specified user.
      */
     public function show($userId)
     {
         $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->findOrFail($userId);
+        $user['skills_by_type'] = $user->skillsByType();
+
+        return $user;
+    }
+
+    /**
+     * Display the specified user by key.
+     */
+    public function showByUsername($username)
+    {
+        // dd($username);
+        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->where('username', $username)->firstOrFail();
         $user['skills_by_type'] = $user->skillsByType();
 
         return $user;

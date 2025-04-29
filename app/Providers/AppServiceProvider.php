@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use App\Models\User;
+use App\Observers\UserObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
         Route::middleware('api')
             ->prefix('api')
             ->group(base_path('routes/api.php'));
+
+        User::observe(UserObserver::class);
     }
 }
