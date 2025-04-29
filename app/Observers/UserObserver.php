@@ -19,11 +19,11 @@ class UserObserver
         }
     }
 
-    protected function generateUniqueUsername(string $name): string
+    private function generateUniqueUsername(string $name): string
     {
         do {
             $base = Str::slug($name);
-            $suffix = Str::lower(Str::random(6));
+            $suffix = random_int(10000, 99999);
             $username = "{$base}-{$suffix}";
         } while (User::where('username', $username)->exists());
 
