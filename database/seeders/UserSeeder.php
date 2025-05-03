@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
             'name' => env('APP_OWNER_NAME'),
             'email' => env('APP_OWNER_EMAIL'),
             'password' => Hash::make('password'),
-            'avatar' => '/storage/images/avatar.jpg',
+            'avatar' => '/images/avatar.jpg',
             'birthday' => Carbon::create(env('APP_OWNER_BIRTHDAY')),
             'location' => env('APP_OWNER_LOCATION'),
             'phone_number' => env('APP_OWNER_PHONE'),
