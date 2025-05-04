@@ -9,6 +9,10 @@ use App\Http\Controllers\UserController;
 Route::apiResource('skills', SkillController::class);
 Route::apiResource('skill-types', SkillTypeController::class);
 
-Route::get('/users/{userId}', [UserController::class, 'show']);
-Route::get('/users/{userId}/skills', [UserController::class, 'getSkills']);
-Route::get('/user/{username}', [UserController::class, 'showByUsername']);
+Route::prefix('users')->controller(UserController::class)->group(function () {
+    Route::get('{userId}', 'show');
+    Route::get('{userId}/skills', 'getSkills');
+});
+
+Route::get('/user/{username}', [UserController::class, 'showByUsername']);  
+Route::get('/owner', [UserController::class, 'showOwner']);

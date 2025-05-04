@@ -23,8 +23,18 @@ class UserController extends Controller
      */
     public function showByUsername($username)
     {
-        // dd($username);
         $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->where('username', $username)->firstOrFail();
+        $user['skills_by_type'] = $user->skillsByType();
+
+        return $user;
+    }
+
+    /**
+     * Display the owner user.
+     */
+    public function showOwner()
+    {
+        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->firstOrFail();
         $user['skills_by_type'] = $user->skillsByType();
 
         return $user;
