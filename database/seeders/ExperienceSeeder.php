@@ -15,9 +15,10 @@ class ExperienceSeeder extends Seeder
      */
     public function run(): void
     {
+        $user = User::first();
         $experiences = [
             [
-                'user' => User::find(1),
+                'user' => $user,
                 'company' => 'Cognizant Romania',
                 'logo' => null,
                 'position' => 'Senior Web Developer',
@@ -32,7 +33,7 @@ class ExperienceSeeder extends Seeder
                 ])->get(),
             ],
             [
-                'user' => User::find(1),
+                'user' => $user,
                 'company' => 'Wipro Limited',
                 'logo' => null,
                 'position' => 'Senior Web Developer',
@@ -47,7 +48,7 @@ class ExperienceSeeder extends Seeder
                 ])->get(),
             ],
             [
-                'user' => User::find(1),
+                'user' => $user,
                 'company' => 'Roweb',
                 'logo' => null,
                 'position' => 'Senior PHP Developer',
@@ -63,7 +64,7 @@ class ExperienceSeeder extends Seeder
                 ])->get(),
             ],
             [
-                'user' => User::find(1),
+                'user' => $user,
                 'company' => 'BoostIT Hub',
                 'logo' => null,
                 'position' => 'PHP Developer',
@@ -78,7 +79,7 @@ class ExperienceSeeder extends Seeder
                 ])->get(),
             ],
             [
-                'user' => User::find(1),
+                'user' => $user,
                 'company' => 'AIESEC',
                 'logo' => null,
                 'position' => 'Team Leader Graphics & Web',

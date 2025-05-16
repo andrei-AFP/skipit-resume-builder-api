@@ -26,5 +26,13 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ExperienceSeeder::class,
         ]);
+
+        $this->call([
+            EducationSeeder::class,
+        ]);
+
+        $this->call([
+            LanguageSeeder::class,
+        ]);
     }
 }

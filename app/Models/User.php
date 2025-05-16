@@ -13,6 +13,8 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -65,9 +67,18 @@ class User extends Authenticatable
             ->groupBy(function ($skill) { return $skill->skillType->name; });
     }
 
-    
     public function experiences()
     {
         return $this->hasMany(Experience::class);
+    }
+
+    public function educations()
+    {
+        return $this->hasMany(Education::class);
+    }
+
+    public function languages()
+    {
+        return $this->hasMany(Language::class);
     }
 }

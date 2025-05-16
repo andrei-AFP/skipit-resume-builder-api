@@ -10,6 +10,8 @@ class SkillType extends Model
     /** @use HasFactory<\Database\Factories\SkillTypeFactory> */
     use HasFactory;
 
+    protected $table = 'skill_types';
+
     protected $fillable = [
         'name',
     ];

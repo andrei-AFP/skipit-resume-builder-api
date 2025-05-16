@@ -12,7 +12,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->get();
+        $users = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType', 'educations', 'languages'])->get();
 
         return $users;
     }
@@ -22,7 +22,7 @@ class UserController extends Controller
      */
     public function show($userId)
     {
-        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->findOrFail($userId);
+        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType', 'educations', 'languages'])->findOrFail($userId);
         $user['skills_by_type'] = $user->skillsByType();
 
         return $user;
@@ -33,7 +33,7 @@ class UserController extends Controller
      */
     public function showByUsername($username)
     {
-        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->where('username', $username)->firstOrFail();
+        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType', 'educations', 'languages'])->where('username', $username)->firstOrFail();
         $user['skills_by_type'] = $user->skillsByType();
 
         return $user;
@@ -44,7 +44,7 @@ class UserController extends Controller
      */
     public function showOwner()
     {
-        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->firstOrFail();
+        $user = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType', 'educations', 'languages'])->firstOrFail();
         $user['skills_by_type'] = $user->skillsByType();
 
         return $user;
