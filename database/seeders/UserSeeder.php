@@ -27,6 +27,7 @@ class UserSeeder extends Seeder
             'location' => env('APP_OWNER_LOCATION'),
             'phone_number' => env('APP_OWNER_PHONE'),
             'linkedin_url' => env('APP_OWNER_LINKEDIN'),
+            'github_url' => env('APP_OWNER_GITHUB'),
         ]);
         
         $skills = Skill::all();

@@ -28,6 +28,7 @@ class User extends Authenticatable
         'location',
         'phone_number',
         'linkedin_url',
+        'github_url',
     ];
 
     /**

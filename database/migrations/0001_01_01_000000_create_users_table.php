@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('location')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('linkedin_url')->nullable();
+            $table->string('github_url')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

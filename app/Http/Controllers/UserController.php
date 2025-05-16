@@ -8,6 +8,16 @@ use App\Models\User;
 class UserController extends Controller
 {
     /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $users = User::with(['skills', 'skills.skillType', 'experiences', 'experiences.skills', 'experiences.skills.skillType'])->get();
+
+        return $users;
+    }
+
+    /**
      * Display the specified user.
      */
     public function show($userId)
