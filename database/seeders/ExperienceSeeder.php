@@ -30,6 +30,9 @@ class ExperienceSeeder extends Seeder
                     'Laravel', 'PHP', 'React', 'MobX', 'TypeScript',
                     'Storybook', 'Jest', 'Next.js', 'PHP', 'Drupal',
                     'JavaScript', 'jQuery', 'Elixir', 'Phoenix Framework',
+                    'Docker', 'Sass', 'Tailwind CSS', 'GitHub', 'MySQL',
+                    'AWS Cloud', 'Microservices', 'Jenkins', 'Agile',
+                    'Gulp', 'GraphQL',
                 ])->get(),
             ],
             [
@@ -42,9 +45,9 @@ class ExperienceSeeder extends Seeder
                 'end_date' => Carbon::create(2019, 8),
                 'description' => null,
                 'skills' => Skill::with('skillType')->whereIn('name', [
-                    'PHP', 'Symfony', 'HTML', 'SCSS', 'Javascript',
-                    'jQuery', 'restAPI', 'SAP', 'MSSQL', 'ServiceNow',
-                    'Jira', 'GitHub', 'Citrix', 'VDI', 'VPN',
+                    'PHP', 'Symfony', 'HTML', 'Sass', 'Javascript',
+                    'jQuery', 'restAPI', 'SAP', 'MySQL', 'ServiceNow',
+                    'GitHub', 'Citrix', 'VDI', 'VPN', 'Redis',
                 ])->get(),
             ],
             [
@@ -58,9 +61,10 @@ class ExperienceSeeder extends Seeder
                 'description' => null,
                 'skills' => Skill::with('skillType')->whereIn('name', [
                     'PHP', 'Laravel', 'CakePHP', 'Node.js', 'Elixir',
-                    'HTML', 'SCSS', 'Less', 'Gulp', 'JavaScript', 'jQuery',
+                    'HTML', 'Sass', 'Less', 'Gulp', 'JavaScript', 'jQuery',
                     'Socket.io', 'Wordpress', 'Prestashop', 'Magento',
                     'Python', 'GRPC', 'MySQL', 'Docker', 'AWS Cloud',
+                    'GitHub', 'Agile',
                 ])->get(),
             ],
             [
@@ -74,8 +78,9 @@ class ExperienceSeeder extends Seeder
                 'description' => null,
                 'skills' => Skill::with('skillType')->whereIn('name', [
                     'PHP', 'Codeigniter', 'Slim', 'Yii2', 'Laravel', 'Symfony',
-                    'HTML', 'SCSS', 'JavaScript', 'jQuery', 'Socket.io',
-                    'Jenkins', 'MySQL', 'Git', 'Bitbucket', 'Jira', 'Docker', 'RestAPI'
+                    'HTML', 'Sass', 'JavaScript', 'jQuery', 'Socket.io',
+                    'Jenkins', 'MySQL', 'Git', 'Bitbucket', 'Docker', 'RestAPI',
+                    'GitHub', 'Agile', 'MongoDB', 'MariaDB',
                 ])->get(),
             ],
             [

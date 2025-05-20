@@ -35,16 +35,21 @@ class SkillSeeder extends Seeder
                 [ 'name' => 'MobX' ],
                 [ 'name' => 'Next.js', 'icon' => 'Nextdotjs' ],
                 [ 'name' => 'TypeScript' ],
+                [ 'name' => 'Jest' ],
                 [ 'name' => 'Socket.io', 'icon' => 'Socketdotio' ],
                 [ 'name' => 'Sass', 'icon' => 'Sass' ],
+                [ 'name' => 'Less' ],
                 [ 'name' => 'Tailwind CSS', 'icon' => 'Tailwindcss' ],
                 [ 'name' => 'jQuery' ],
+                [ 'name' => 'Storybook' ],
+                [ 'name' => 'Gulp' ],
             ],
             'DevOps ' => [
                 [ 'name' => 'GitHub' ],
                 [ 'name' => 'Docker' ],
                 [ 'name' => 'AWS Cloud', 'icon' => 'Amazon' ],
                 [ 'name' => 'Kubernetes', 'icon' => 'Kubernetes' ],
+                [ 'name' => 'Jenkins' ],
             ],
             'CMS/CRM' => [
                 [ 'name' => 'Drupal' ],
@@ -54,7 +59,9 @@ class SkillSeeder extends Seeder
             ],
             'Databases' => [
                 [ 'name' => 'MySQL' ],
+                [ 'name' => 'Redis' ],
                 [ 'name' => 'MongoDB' ],
+                [ 'name' => 'MariaDB' ],
                 [ 'name' => 'Elasticsearch' ],
             ],
             'ERP' => [
