@@ -15,6 +15,7 @@ class SkillSeeder extends Seeder
     {
         $skillsByType = [
             'Languages' => [
+                [ 'name' => 'Flutter' ],
                 [ 'name' => 'PHP' ],
                 [ 'name' => 'JavaScript' ],
                 [ 'name' => 'Elixir' ],
@@ -31,6 +32,7 @@ class SkillSeeder extends Seeder
                 [ 'name' => 'GraphQL' ],
             ],
             'Frontend' => [
+                [ 'name' => 'Vue.js', 'icon' => 'vuedotjs' ],
                 [ 'name' => 'React' ],
                 [ 'name' => 'MobX' ],
                 [ 'name' => 'Next.js', 'icon' => 'Nextdotjs' ],
