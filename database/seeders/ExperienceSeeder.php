@@ -20,7 +20,7 @@ class ExperienceSeeder extends Seeder
             [
                 'user' => $user,
                 'company' => 'BitSoft',
-                'logo' => null,
+                'logo' => '/images/bitsoft-logo.png',
                 'position' => 'Senior Software Developer',
                 'location' => 'Bucharest, Romania',
                 'start_date' => Carbon::create(2025, 6),
@@ -35,7 +35,7 @@ class ExperienceSeeder extends Seeder
             [
                 'user' => $user,
                 'company' => 'Cognizant Romania',
-                'logo' => null,
+                'logo' => '/images/cognizant-logo.png',
                 'position' => 'Senior Web Developer | Tech Lead',
                 'location' => 'Bucharest, Romania',
                 'start_date' => Carbon::create(2019, 8),
@@ -53,7 +53,7 @@ class ExperienceSeeder extends Seeder
             [
                 'user' => $user,
                 'company' => 'Wipro Limited',
-                'logo' => null,
+                'logo' => '/images/wipro-logo.png',
                 'position' => 'Senior Web Developer | Team Lead',
                 'location' => 'Bucharest, Romania',
                 'start_date' => Carbon::create(2018, 8),
@@ -68,7 +68,7 @@ class ExperienceSeeder extends Seeder
             [
                 'user' => $user,
                 'company' => 'Roweb',
-                'logo' => null,
+                'logo' => '/images/roweb-logo.png',
                 'position' => 'Senior PHP Developer | Team Lead',
                 'location' => 'Pitesti, Romania',
                 'start_date' => Carbon::create(2017, 10),
@@ -85,7 +85,7 @@ class ExperienceSeeder extends Seeder
             [
                 'user' => $user,
                 'company' => 'BoostIT Hub',
-                'logo' => null,
+                'logo' => '/images/boostit-logo.png',
                 'position' => 'PHP Developer | Team Lead',
                 'location' => 'Pitesti, Romania',
                 'start_date' => Carbon::create(2015, 7),
@@ -101,7 +101,7 @@ class ExperienceSeeder extends Seeder
             [
                 'user' => $user,
                 'company' => 'AIESEC',
-                'logo' => null,
+                'logo' => '/images/aiesec-logo.png',
                 'position' => 'Team Leader Graphics & Web',
                 'location' => 'Pitesti, Romania',
                 'start_date' => Carbon::create(2014, 10),
